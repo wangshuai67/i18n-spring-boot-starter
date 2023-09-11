@@ -18,14 +18,15 @@ Spring Boot 国际化组件
 spring.ex.i18n.enable=false
 spring.ex.i18n.mark=false
 spring.ex.i18n.default-locale=zh-CN
-spring.ex.i18n.data-source=e6yun_main_mysql
-spring.ex.i18n.config-table=config_i18n_message_e6yun3
+spring.ex.i18n.data-source=primary
+spring.ex.i18n.config-table=config_i18n_message
 ```
 1.配置项
 ```properties
 
 #添加国际化
-spring.ex.i18n.enable=false
+spring.ex.i18n.enable=true
+# 如果未翻译是否将code 初始化入库
 spring.ex.i18n.mark=false
 spring.ex.i18n.default-locale=zh-CN
 spring.ex.i18n.data-source=e6yun_main_mysql
