@@ -1,2 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.bdkjzx.project.i18n.config.I18nAutoConfig
