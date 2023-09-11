@@ -12,15 +12,7 @@ Spring Boot 国际化组件
     <version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
-```properties
-
-#添加国际化
-spring.ex.i18n.enable=false
-spring.ex.i18n.mark=false
-spring.ex.i18n.default-locale=zh-CN
-spring.ex.i18n.data-source=primary
-spring.ex.i18n.config-table=config_i18n_message
-```
+ 
 1.配置项
 ```properties
 
@@ -29,8 +21,8 @@ spring.ex.i18n.enable=true
 # 如果未翻译是否将code 初始化入库
 spring.ex.i18n.mark=false
 spring.ex.i18n.default-locale=zh-CN
-spring.ex.i18n.data-source=e6yun_main_mysql
-spring.ex.i18n.config-table=config_i18n_message_e6yun3
+spring.ex.i18n.data-source=primary
+spring.ex.i18n.config-table=config_i18n_message
 ```
 
 2.初始化国际化配置表
@@ -47,7 +39,7 @@ CREATE TABLE `config_i18n_message` (
 
 ```
 
-使用
+3.如何使用
 ```java
 I.n("操作成功")
 ```
@@ -111,4 +103,9 @@ public class ApiResponse<T> {
     }
 }
 
+```
+5.扩展请看入口
+
+```java
+  com.bdkjzx.project.i18n.config.I18nAutoConfig
 ```
